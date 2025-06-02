@@ -1,886 +1,292 @@
 question_data = [
     {"text": "The Bible was first written in the English language?.", "answer": "False"},
-    {"text": "The loudest animal is the African Elephant.", "answer": "False"},
-    {"text": "Approximately one quarter of human bones are in the feet.", "answer": "True"},
-    {"text": "The total surface area of a human lungs is the size of a football pitch.", "answer": "True"},
-    {"text": "In West Virginia, USA, if you accidentally hit an animal with your car, "
-             "you are free to take it home to eat.", "answer": "True"},
-    {"text": "In London, UK, if you happen to die in the House of Parliament, you are "
-             "entitled to a state funeral.", "answer": "False"},
-    {"text": "It is illegal to pee in the Ocean in Portugal.", "answer": "True"},
-    {"text": "You can lead a cow down stairs but not up stairs.", "answer": "False"},
-    {"text": "Google was originally called 'Backrub'.", "answer": "True"},
-    {"text": "Buzz Aldrin's mother's maiden name was 'Moon'.", "answer": "True"},
-    {"text": "No piece of square dry paper can be folded in half more than 7 times.", "answer": "False"},
-    {"text": "A few ounces of chocolate can to kill a small dog.", "answer": "True"}
+    {"text": "Genesis is the first book in the Bible", "answer": "True"},
+    {"text": "Matthew, Mark, Luke, John are the four Gospel books telling about Jesus's life on Earth? .",
+     "answer": "True"},
+    {"text": "Jesus directly wrote the book of Revelation", "answer": "False"},
+    {"text": "There are 37 books in the Old Testament", "answer": "False"},
+    {"text": "David wrote the entire book of Psalms.", "answer": "False"},
+    {"text": "Jude is the last book in the Bible", "answer": "False"},
+    {"text": "There are 39 books in the Old Testament", "answer": "True"},
+    {"text": "There are 27 books in the New Testament", "answer": "True"},
+    {"text": "Psalms is the longest book in the Bible", "answer": "True"},
+    {"text": "Revelation is the last book in the Bible", "answer": "True"},
+    {"text": "The Bible has 66 books", "answer": "False"},
+    {"text": "3 John is the shortest book in the Bible", "answer": "True"},
+    {"text": "The Bible was first written in the English language", "answer": "False"},
+    {"text": "Paul  wrote the most words in the Bible", "answer": "False"},
+    {"text": "Most of the Old Testament was given in the Hebrew language", "answer": "True"},
+    {"text": "Which NT book has Jesus' Sermon on the Mount? - Matthew", "answer": "True"},
+    {"text": "3 John is the shortest book in the Bible", "answer": "True"},
+    {"text": "Most of the New Testament was given in the Greek language", "answer": "True"},
+    {"text": "Paul  wrote 13 books of the bible", "answer": "True"},
+    {"text": "Moses  wrote the most words in the Bible", "answer": "False"},
+    {"text": "Mark was most likely the first Gospel written.", "answer": "True"},
+    {"text": "John was most likely the last Gospel written.", "answer": "True"},
+    {"text": "1 Thessalonians was most likely the first of Paul's letters written.", "answer": "True"},
+    {"text": "Revelation was most likely the last New Testament book written.", "answer": "True"},
+    {"text": "God took 6 days to create the world.", "answer": "True"},
+    {"text": "God created man on the 6th day.", "answer": "True"},
+    {"text": "Adam was the first man.", "answer": "True"},
+    {"text": "Eve was the first woman.", "answer": "True"},
+    {"text": "Adam and Eve lived in the Garden of Eden at the beginning of the world.", "answer": "True"},
+    {"text": "Cain, Abel, and Seth were the three sons of Adam and Eve listed in the Bible.", "answer": "True"},
+    {"text": "Noah was the one God told to build an ark.", "answer": "True"},
+    {"text": "Noah’s three sons were Shem, Ham, and Japheth.", "answer": "True"},
+    {"text": "It rained for 40 days and 40 nights when Noah was on the ark.", "answer": "True"},
+    {"text": "Eight people were saved on the ark.", "answer": "True"},
+    {"text": "God’s sign to Noah that He would never destroy the earth again was a rainbow.", "answer": "True"},
+    {"text": "Men were trying to build a tower to Heaven at the Tower of Babel.", "answer": "True"},
+    {"text": "God confused their languages to make them spread out across the earth.", "answer": "True"},
+    {"text": "God called Abram out of Ur to move to Canaan.", "answer": "True"},
+    {"text": "Abram’s wife was Sarai.", "answer": "True"},
+    {"text": "God promised Abram and Sarah a son even though they were too old.", "answer": "True"},
+    {"text": "God promised Abram he would have more descendants than the stars.", "answer": "True"},
+    {"text": "Hagar was Abram’s handmaid.", "answer": "True"},
+    {"text": "It was Sarah’s idea for Abram to have a child with Hagar.", "answer": "True"},
+    {"text": "Ishmael was Abram’s first son.", "answer": "True"},
+    {"text": "Abram’s name was changed to Abraham.", "answer": "True"},
+    {"text": "Sarai’s name was changed to Sarah.", "answer": "True"},
+    {"text": "Isaac was Abraham’s second son.", "answer": "True"},
+    {"text": "Sarah was the mother of Isaac.", "answer": "True"},
+    {"text": "Hagar and her son left into the desert.", "answer": "True"},
+    {"text": "Abraham sent his oldest servant to find Isaac a wife.", "answer": "True"},
+    {"text": "The servant chose Rebekah as Isaac’s wife.", "answer": "True"},
+    {"text": "Isaac’s sons were Jacob and Esau.", "answer": "True"},
+    {"text": "Esau was born first, with Jacob grabbing his heel.", "answer": "True"},
+    {"text": "Esau hunted to provide food for the family.", "answer": "True"},
+    {"text": "Isaac favored Esau over Jacob.", "answer": "True"},
+    {"text": "Jacob stayed at home with his mother most of the time.", "answer": "True"},
+    {"text": "Esau exchanged his birthright for some stew.", "answer": "True"},
+    {"text": "Rebekah suggested that Jacob should steal the blessing from Esau.", "answer": "True"},
+    {"text": "Esau threatened to kill Jacob after losing his blessing.", "answer": "True"},
+    {"text": "Jacob wanted to marry Rachel when he met Laban.", "answer": "True"},
+    {"text": "Laban tricked Jacob into marrying Leah first.", "answer": "True"},
+    {"text": "Jacob had to work another seven years to marry Rachel.", "answer": "True"},
+    {"text": "Joseph was the first son Jacob had with Rachel.", "answer": "True"},
+    {"text": "God changed Jacob’s name to Israel before his meeting with Esau.", "answer": "True"},
+    {"text": "Joseph had 11 brothers.", "answer": "True"},
+    {"text": "Jacob gave Joseph a coat of many colors, which made his brothers jealous.", "answer": "True"},
+    {"text": "Joseph’s dreams said he would rule over his brothers.", "answer": "True"},
+    {"text": "Joseph’s brothers sold him to slave traders.", "answer": "True"},
+    {"text": "Joseph’s brothers told their father he was killed by a wild animal.", "answer": "True"},
+    {"text": "The slave traders took Joseph to Egypt.", "answer": "True"},
+    {"text": "Potiphar, captain of Pharaoh’s guards, bought Joseph.", "answer": "True"},
+    {"text": "Potiphar’s wife got Joseph thrown into prison by lying about him.", "answer": "True"},
+    {"text": "Joseph was alone in prison with no one else.", "answer": "False"},
+    {"text": "Joseph interpreted the dreams of the Pharaoh’s cupbearer and chief baker.", "answer": "True"},
+    {"text": "Joseph was summoned out of prison to entertain Pharaoh.", "answer": "False"},
+    {"text": "Joseph was made second in command of Egypt by Pharaoh.", "answer": "True"},
+    {"text": "Joseph predicted a seven-year famine by interpreting Pharaoh’s dream.", "answer": "True"},
+    {"text": "Joseph’s brothers came to Egypt because of the famine.", "answer": "True"},
+    {"text": "Benjamin was Jacob’s second son with Rachel.", "answer": "True"},
+    {"text": "Joseph told his brothers to leave Benjamin in Egypt and not return.", "answer": "False"},
+    {"text": "Judah volunteered to stay in Egypt instead of Benjamin.", "answer": "True"},
+    {"text": "Joseph told his brothers to bring their families and father to Egypt.", "answer": "True"},
+    {"text": "Moses’ mother saved him from Egyptian soldiers by hiding him in a basket in the river.", "answer": "True"},
+    {"text": "After killing an Egyptian, Moses celebrated in Egypt.", "answer": "False"},
+    {"text": "God spoke to Moses through a burning bush in the desert.", "answer": "True"},
+    {"text": "When Moses threw his staff on the ground, it turned into a snake.", "answer": "True"},
+    {"text": "Moses told Pharaoh that God wanted the Israelite slaves freed.", "answer": "True"},
+    {"text": "God sent 10 plagues on Egypt.", "answer": "True"},
+    {"text": "The final plague was frogs covering the land.", "answer": "False"},
+    {"text": "Pharaoh’s army caught the Israelites before the Red Sea.", "answer": "False"},
+    {"text": "God parted the Red Sea to save the Israelites.", "answer": "True"},
+    {"text": "The Egyptian army survived after chasing the Israelites into the Red Sea.", "answer": "False"},
+    {"text": "God fed the Israelites with manna and quail in the desert.", "answer": "True"},
+    {"text": "God gave Moses the Ten Commandments on Mt. Sinai.", "answer": "True"},
+    {"text": "The Israelites made a golden calf at Mt. Sinai.", "answer": "True"},
+    {"text": "The spies were scared of giants in Canaan.", "answer": "True"},
+    {"text": "Joshua and Caleb were the only two Israelites allowed into the Promised Land.", "answer": "True"},
+    {"text": "God made the walls of Jericho fall so Joshua could conquer the city.", "answer": "True"},
+    {"text": "After Joshua died, kings ruled Israel immediately.", "answer": "False"},
+    {"text": "Deborah was a woman judge who led Israel to victory.", "answer": "True"},
+    {"text": "Gideon defeated the Midianites with thousands of soldiers.", "answer": "False"},
+    {"text": "Samson took a Nazarite vow from birth and fought the Philistines.", "answer": "True"},
+    {"text": "Samson killed 1,000 Philistines with a donkey’s jawbone.", "answer": "True"},
+    {"text": "Delilah asked Samson where his power came from.", "answer": "True"},
+    {"text": "Samson died peacefully in old age.", "answer": "False"},
+    {"text": "Saul was the first king of Israel.", "answer": "True"},
+    {"text": "Samuel anointed Saul as king.", "answer": "True"},
+    {"text": "The Philistines took the Ark of the Covenant.", "answer": "True"},
+    {"text": "The idol beside the Ark in the Philistine temple stood tall and unharmed.", "answer": "False"},
+    {"text": "Saul made a sacrifice to God that only priests should make.", "answer": "True"},
+    {"text": "Saul obeyed God completely when conquering the Amalekites.", "answer": "False"},
+    {"text": "Saul kept King Agag alive against God’s command.", "answer": "True"},
+    {"text": "God took the kingdom from Saul for disobedience.", "answer": "True"},
+    {"text": "Samuel anointed David as king after Saul.", "answer": "True"},
+    {"text": "David was a shepherd for his father.", "answer": "True"},
+    {"text": "Goliath mocked God and challenged the Israelites.", "answer": "True"},
+    {"text": "Saul gave David his own armor to fight Goliath.", "answer": "True"},
+    {"text": "David took five stones from the brook to fight Goliath.", "answer": "True"},
+    {"text": "David needed three sling-throws to defeat Goliath.", "answer": "False"},
+    {"text": "Jonathan, Saul’s son, became David’s enemy.", "answer": "False"},
+    {"text": "Saul threw a javelin to try to kill David.", "answer": "True"},
+    {"text": "Jonathan warned David about Saul’s plans to kill him.", "answer": "True"},
+    {"text": "David ran to the land of the Philistines to escape Saul.", "answer": "True"},
+    {"text": "Saul gave up chasing David quickly.", "answer": "False"},
+    {"text": "David spared Saul’s life once.", "answer": "False"},
+    {"text": "David spared Saul’s life in a cave the first time.", "answer": "True"},
+    {"text": "David spared Saul’s life in his camp the second time.", "answer": "True"},
+    {"text": "Samuel was the last judge of Israel who died after Saul’s peace with David.", "answer": "True"},
+    {"text": "David went to Philistia after Saul continued hunting him.", "answer": "True"},
+    {"text": "When Saul couldn’t hear from God, he sought advice from a witch.", "answer": "True"},
+    {"text": "Saul asked to speak to the prophet Elijah.", "answer": "False"},
+  {"text": "Saul died by falling on his own sword.", "answer": "True"},
+  {"text": "Only one of Saul’s sons died in the same battle.", "answer": "False"},
+  {"text": "All of Israel immediately considered David their king.", "answer": "False"},
+  {"text": "Joab was David’s captain of the army.", "answer": "True"},
+  {"text": "David committed adultery with Bathsheba while staying in Jerusalem.", "answer": "True"},
+  {"text": "Uriah was Bathsheba’s husband.", "answer": "True"},
+  {"text": "David had Uriah promoted after Bathsheba became pregnant.", "answer": "False"},
+  {"text": "Nathan was the prophet who rebuked David.", "answer": "True"},
+  {"text": "Bathsheba’s first child with David lived a long life.", "answer": "False"},
+  {"text": "Solomon was the second child born to David and Bathsheba.", "answer": "True"},
+  {"text": "Absalom, David’s son, started a rebellion against him.", "answer": "True"},
+  {"text": "David abandoned Jerusalem when Absalom approached.", "answer": "True"},
+  {"text": "Absalom’s hair got caught in a tree during battle.", "answer": "True"},
+  {"text": "Joab killed Absalom.", "answer": "True"},
+  {"text": "Joab remained captain even after killing Absalom.", "answer": "False"},
+  {"text": "David’s second sin recorded in the Bible was taking a census.", "answer": "True"},
+  {"text": "The Philistines were David’s main enemy during his reign.", "answer": "True"},
+  {"text": "David’s reign as king is recorded in the books of 1st and 2nd Samuel.", "answer": "True"},
+  {"text": "David wrote most of the book of Psalms.", "answer": "True"},
+  {"text": "Solomon, David’s son, became king after him.", "answer": "True"},
+  {"text": "Solomon prayed to God for great wealth.", "answer": "False"},
+  {"text": "Solomon built a temple for the Lord.", "answer": "True"},
+  {"text": "The Queen of Sheba visited Solomon.", "answer": "True"},
+  {"text": "Solomon had 700 wives.", "answer": "True"},
+  {"text": "Solomon always followed the Lord.", "answer": "False"},
+  {"text": "Solomon’s wives turned him away from God.", "answer": "True"},
+  {"text": "The kingdom remained united after Solomon’s rule.", "answer": "False"},
+  {"text": "1st and 2nd Kings and 1st and 2nd Chronicles record the history of all the kings.", "answer": "True"},
+  {"text": "Solomon wrote Song of Solomon, Proverbs, and some Psalms.", "answer": "True"},
+  {"text": "There were 20 kings of Judah.", "answer": "True"},
+  {"text": "There were 19 kings of Israel.", "answer": "True"},
+  {"text": "The Babylonians conquered Judah and took Daniel to their country.", "answer": "True"},
+  {"text": "Daniel interpreted the dream of King Nebuchadnezzar.", "answer": "True"},
+  {"text": "Darius was the last king Daniel served under in the Bible.", "answer": "True"},
+  {"text": "Daniel was thrown into a lion’s den for praying to God.", "answer": "True"},
+  {"text": "Daniel’s three friends were named Shadrach, Meshach, and Abednego.", "answer": "True"},
+  {"text": "Shadrach, Meshach, and Abednego were thrown into a fiery furnace for worshiping an idol.", "answer": "False"},
+  {"text": "Nehemiah returned to Israel to rebuild Jerusalem’s walls.", "answer": "True"},
+  {"text": "Esther was an Israelite who became queen and saved her people.", "answer": "True"},
+  {"text": "Esther waited to be summoned before talking to the king.", "answer": "False"},
+  {"text": "Cyrus allowed the Israelites to return to their homeland.", "answer": "True"},
+  {"text": "Jesus came from the lineage of David.", "answer": "True"},
+  {"text": "Mary was Jesus’ human mother.", "answer": "True"},
+  {"text": "Joseph was Jesus’ adoptive father.", "answer": "True"},
+  {"text": "Jesus’ birth father was Joseph.", "answer": "False"},
+  {"text": "Jesus was born in Bethlehem.", "answer": "True"},
+  {"text": "Jesus’ family went to Egypt to escape King Herod.", "answer": "True"},
+  {"text": "Jesus never obeyed his parents because he was God.", "answer": "False"},
+  {"text": "Jesus was an only child.", "answer": "False"},
+  {"text": "The Bible names four of Jesus’ brothers.", "answer": "True"},
+  {"text": "None of Jesus’ sisters are named in the Bible.", "answer": "True"},
+  {"text": "John the Baptist was Jesus’ most famous cousin.", "answer": "True"},
+  {"text": "John the Baptist wore clothes made of goat hair.", "answer": "False"},
+  {"text": "John the Baptist baptized Jesus.", "answer": "True"},
+  {"text": "God spoke from heaven when Jesus was baptized.", "answer": "True"},
+  {"text": "Jesus was tempted by Satan in the wilderness.", "answer": "True"},
+  {"text": "Before preaching, Jesus was a carpenter.", "answer": "True"},
+  {"text": "Jesus’ hometown was Nazareth.", "answer": "True"},
+  {"text": "Jesus turned water into Coca-Cola.", "answer": "False"},
+  {"text": "Jesus healed the sick and cast out demons while traveling.", "answer": "True"},
+  {"text": "Jesus avoided people with bad reputations.", "answer": "False"},
+  {"text": "Jesus walked on water at the Sea of Galilee.", "answer": "True"},
+  {"text": "At first, Jesus’ family tried to stop his ministry.", "answer": "True"},
+  {"text": "Jesus said anyone who obeys God is his true family.", "answer": "True"},
+  {"text": "Everyone loved and accepted Jesus wherever he went.", "answer": "False"},
+  {"text": "Nicodemus came at night to ask Jesus questions.", "answer": "True"},
+  {"text": "Jesus welcomed all people to follow him.", "answer": "True"},
+  {"text": "Jesus chose 12 disciples.", "answer": "True"},
+  {"text": "Matthew was a fisherman before following Jesus.", "answer": "False"},
+  {"text": "Jesus used spit as part of healing miracles.", "answer": "True"},
+  {"text": "‘Jesus wept’ is the shortest verse in the Bible.", "answer": "True"},
+  {"text": "Jesus wept because Lazarus was raised from the dead.", "answer": "False"},
+  {"text": "Lazarus had been dead four days when Jesus arrived.", "answer": "True"},
+  {"text": "Jesus prayed and spoke to raise Lazarus from the dead.", "answer": "True"},
+  {"text": "Several women paid for Jesus’ ministry.", "answer": "True"},
+  {"text": "Jesus cast out a demon named Legion in the region of the Gerasenes.", "answer": "True"},
+  {"text": "Jesus had the power to raise the dead.", "answer": "True"},
+  {"text": "Jesus fed 5,000 people with five loaves and two fish.", "answer": "True"},
+  {"text": "Jesus said handwashing is never important.", "answer": "False"},
+  {"text": "Peter and Andrew were fishing when Jesus called them.", "answer": "True"},
+  {"text": "Elijah and Moses appeared when Jesus was transfigured.", "answer": "True"},
+  {"text": "Jesus told children to stay away while he taught adults.", "answer": "False"},
+  {"text": "Bartimaeus was blind until Jesus healed him.", "answer": "True"},
+  {"text": "Jesus stayed quiet in the temple when he saw corruption.", "answer": "False"},
+  {"text": "Jesus fed 5,000 people with bread and fish.", "answer": "True"},
+  {"text": "Jesus healed 10 lepers, but only one returned.", "answer": "True"},
+  {"text": "At the Last Supper, Jesus washed the disciples’ feet.", "answer": "True"},
+  {"text": "Jesus said only large offerings matter to God.", "answer": "False"},
+  {"text": "A woman poured perfume on Jesus’ feet at Simon’s house.", "answer": "True"},
+  {"text": "Judas Iscariot betrayed Jesus.", "answer": "True"},
+  {"text": "Jesus prayed in the Garden of Gethsemane after the Last Supper.", "answer": "True"},
+  {"text": "The Jewish leaders tried to set Jesus free.", "answer": "False"},
+  {"text": "Roman soldiers gave Jesus a crown of thorns.", "answer": "True"},
+  {"text": "Pilate was the Roman governor over Jesus’ trial.", "answer": "True"},
+  {"text": "Pilate washed his hands to show he was innocent.", "answer": "True"},
+  {"text": "Peter cut off a soldier’s ear when Jesus was arrested.", "answer": "True"},
+  {"text": "Jesus didn’t know he would be arrested and killed.", "answer": "False"},
+  {"text": "Peter denied Jesus three times.", "answer": "True"},
+  {"text": "The temple curtain tore when Jesus died.", "answer": "True"},
+  {"text": "Jesus rose from the dead after being buried.", "answer": "True"},
+  {"text": "A small rock was rolled away from Jesus’ tomb.", "answer": "False"},
+  {"text": "Jesus rose on Sunday, the first day of the week.", "answer": "True"},
+  {"text": "Jesus stayed on earth 40 days after rising.", "answer": "True"},
+  {"text": "Jesus went to Heaven by climbing a mountain.", "answer": "False"},
+  {"text": "Over 500 people saw Jesus after he rose from the dead.", "answer": "True"},
+  {"text": "Peter’s vision about unclean animals meant that all people, including non-Jews, "
+           "can be made clean through Jesus.", "answer": "True"},
+  {"text": "Jesus’ followers were first called Christians in Antioch.", "answer": "True"},
+  {"text": "Peter was rescued from prison by an angel.", "answer": "True"},
+  {"text": "Barnabas went with Paul on his early mission trips.", "answer": "True"},
+  {"text": "Paul had a vision of a man calling him to come over to Carthage.", "answer": "False"},
+  {"text": "God sent an earthquake to rescue Paul and Silas from prison in Philippi, but they "
+           "stayed to share the Gospel.", "answer": "True"},
+  {"text": "The Philippian jailer asked Paul, 'What must I do to be saved?'", "answer": "True"},
+  {"text": "Paul and Silas told the Philippian jailer to believe in the Lord Jesus to be saved.", "answer": "True"},
+  {"text": "Paul’s goal in his missionary journeys was to take the Gospel everywhere and finally preach in Rome.", "answer": "True"},
+  {"text": "The 10 Commandments are found in Exodus 20 and Deuteronomy 5.", "answer": "True"},
+  {"text": "Moses received the 10 Commandments from God.", "answer": "True"},
+  {"text": "The introduction to the Commandments is: 'I am the LORD your God who brought you out of Egypt.'", "answer": "True"},
+  {"text": "The 1st commandment is: You shall have no other gods before me.", "answer": "True"},
+  {"text": "The 2nd commandment is: You shall not make idols.", "answer": "True"},
+  {"text": "The 3rd commandment is: You shall not misuse the name of the LORD your God.", "answer": "True"},
+  {"text": "The 4th commandment is: Observe the Sabbath day by keeping it holy.", "answer": "True"},
+  {"text": "The 5th commandment is: Honor your father and mother.", "answer": "True"},
+  {"text": "The 6th commandment is: You shall not murder.", "answer": "True"},
+  {"text": "The 7th commandment is: You shall not commit adultery.", "answer": "True"},
+  {"text": "The 8th commandment is: You shall not steal.", "answer": "True"},
+  {"text": "The 9th commandment is: You shall not give false testimony.", "answer": "True"},
+  {"text": "The 10th commandment is: You shall not covet.", "answer": "True"},
+  {"text": "Jesus said the Old Testament rules don’t matter anymore.", "answer": "False"},
+  {"text": "Jesus summarized all the Old Testament rules into two commandments.", "answer": "True"},
+  {"text": "The first and greatest commandment is to love God with all your heart, soul, mind, and strength.", "answer": "True"},
+  {"text": "The second greatest commandment is to love your neighbor as yourself.", "answer": "True"},
+  {"text": "The Fruit of the Spirit is found in Galatians 5.", "answer": "True"},
+  {"text": "Paul is the human author who wrote the book of Galatians.", "answer": "True"},
+  {"text": "Bananas are a fruit of the Spirit.", "answer": "False"},
+  {"text": "The Fruit of the Spirit includes love, joy, peace, patience, kindness, goodness, faithfulness, "
+           "gentleness, and self-control.", "answer": "True"},
+  {"text": "The opposite of the Fruit of the Spirit are called 'the works of the flesh.'", "answer": "True"},
+  {"text": "The Lord’s Prayer is found in Matthew 6.", "answer": "True"},
+  {"text": "Jesus taught the Lord’s Prayer.", "answer": "True"},
+  {"text": "There are seven petitions in the Lord’s Prayer.", "answer": "True"},
+  {"text": "The first petition in the Lord’s Prayer is 'Hallowed be your name.'", "answer": "True"},
+  {"text": "The second petition in the Lord’s Prayer is 'Your kingdom come.'", "answer": "True"},
+  {"text": "The third petition in the Lord’s Prayer is 'Your will be done on Earth.'", "answer": "True"},
+  {"text": "The fourth petition in the Lord’s Prayer is 'Give us our daily bread.'", "answer": "True"},
+  {"text": "The fifth petition in the Lord’s Prayer is 'Forgive our debts.'", "answer": "True"},
+  {"text": "The sixth petition in the Lord’s Prayer is 'Don’t lead us into temptation.'", "answer": "True"},
+  {"text": "The seventh petition in the Lord’s Prayer is 'Deliver us from evil.'", "answer": "True"},
+  {"text": "The more words we say in prayer, the better they are.", "answer": "False"}
+
+
+
 ]
 
-var = ('''301 Bible Trivia
-Questions
-by Ministry-To-Children.com
-Questions about the Bible
-True or False: The Bible is the most popular
-book ever written. (by copies sold)
-A: True
-Q: What is the first book in the Bible?
-A: Genesis
-Q: What is the last book in the Bible?
-A: Revelation
-Q: What four books tell about Jesus life on
-Earth?
-A: Matthew, Mark, Luke, John
-Q: Which book did Jesus directly write?
-A: None
-Q: What is the longest book in the Bible?
-A: Psalms
-True or False: David wrote the entire book
-of Psalms.
-False: The Psalms are a collection by many
-writers, but David contributed the most.
-Q: What is the shortest book in the Bible?
-A: 3 John
-Q: How many books are in the Bible?
-A: 66
-Q: How many books in the Old Testament?
-A: 39 books in the OT
-Q: How many books in the New Testament?
-A: 27 books in the NT
-Q: Which NT book has Jesus' Sermon on the
-Mount?
-A: Matthew
-Ture or False: The Bible was first written in
-the English language?
-A: False
-Q: In what language was most of the Old
-Testament given?
-A: Hebrew
-Q: In what language was most of the New
-Testament given?
-A: Greek
-Q: Which human author wrote the most
-books?
-A: Paul wrote 13 books.
-Q: Which human author wrote the most
-words in the Bible?
-A: Moses wrote 125,139 words. (source)
-Q: What was most likely the first Gospel
-written?
-A: Mark
-Q: What was most likely the last Gospel
-written?
-A: John
-Q: What was most likely the first of Paul's
-letters written?
-A: 1 Thessalonians
-Q: What was most likely the last New
-Testament book written?
-A: Revelation
-Questions from Genesis
-Q: How many days did God take to create
-the world?
-A: 6
-Q: What day did God create man?
-A: 6th
-Q: Who was the first man?
-A: Adam
-Q: Who was the first woman?
-A: Eve
-Q: Where did they live at the beginning of
-the world?
-A: Garden of Eden
-Q: Who were their three sons listed in the
-Bible?
-A: Cain, Abel, Seth
-Q: Who did God tell to build an ark?
-A: Noah
-Q: Who were Noah’s three sons?
-A: Shem, Ham, Japheth
-Q: How many days and nights did it rain
-when Noah was on the ark?
-A: 40
-Q: How many people were saved on the
-ark?
-A: 8
-Q: What was God’s sign to Noah that he
-would never destroy the earth again?
-A: A rainbow
-Q: What were men trying to do at the
-Tower of Babel?
-A: Built a tower to reach to Heaven.
-Q: How did God make them spread out
-across the earth?
-A: Confused their languages.
-Q: Who did God call out of Ur to move to
-Canaan?
-A: Abram
-Q: Who was Abram’s wife?
-A: Sarai
-Q: Even though Abram and Sarah were too
-old, what did God promise them?
-A: A son
-Q: When God showed Abram the stars in
-the sky, what did he promise?
-A: That Abram would have more
-descendants than the number of stars.
-Q: Who was Abram’s handmaid?
-A: Hagar
-Q: What was Sarah’s idea for Abram to have
-a child?
-A: For Abram to have a child with Hagar.
-Q: Who was the first son he had?
-A: Ishmael.
-Q: What was Abram’s name changed to?
-A: Abraham
-Q: What was Sarai’s name changed to?
-A: Sarah
-Q: What was the second son Abraham had?
-A: Isaac
-Q: Who did Abraham have his second son
-with?
-A: Sarah
-Q: Where did Hagar and her son leave to?
-A: Into the desert
-Q: Who did Abraham send to find Isaac a
-wife?
-A: His oldest servant
-Q: Who did the servant choose?
-A: Rebekah
-Q: What were Isaac’s sons’ names?
-A: Jacob and Esau
-Q: Who was born first?
-A: Esau came first, with Jacob grabbing his
-heel.
-Q: How did Esau provide food for the
-family?
-A: He hunted.
-Q: Who did Isaac favor of his two sons?
-A: Esau
-Q: What did Jacob do most of the time?
-A: Stayed in the home with his mother.
-Q: What did Esau receive in exchange for
-his birthright?
-A: Some stew.
-Q: As Isaac was dying and blind, who
-suggested that Jacob should steal the
-blessing?
-A: Rebekah.
-Q: How did Esau respond when his
-birthright was taken?
-A: Threatened to kill Jacob.
-Q: When Jacob met Laban, which daughter
-did he want to marry?
-A: Rachel.
-Q: Who did Laban trick Jacob into marrying?
-A: Leah.
-Q: What did Laban make Jacob do to finally
-marry Rachel?
-A: Work another seven years.
-Q: Who was the first son Jacob had with
-Rachel?
-A: Joseph
-Q: What did God change Jacob’s name to
-before his meeting with Esau?
-A: Israel
-Q: How many brothers did Joseph have?
-A: 12
-Q: What did Jacob give Joseph that sparked
-jealousy from his siblings?
-A: A coat of many colors.
-Q: What did Joseph tell his brothers about
-his dreams that upset them?
-A: The dreams said he would become
-greater and rule over them.
-Q: How did the brothers get rid of Joseph?
-A: Sold him to slave traders.
-Q: What did Joseph’s brothers tell their
-father had happened to him?
-A: They said Joseph was killed by a wild
-animal.
-Q: Where did the slave traders take Joseph?
-A: Egypt
-Q: Who bought Joseph?
-A: Potiphar, captain of the Pharaoh’s guards
-Q: Who got Joseph thrown into prison by
-lying about him?
-A: Potiphar’s wife
-Q: Who else was in prison with Joseph?
-A: The Pharaoh’s cupbearer and chief baker.
-Q: What did Joseph do for them?
-A: Interrupted their dreams.
-Q: Why was Joseph summoned out of
-prison by the Pharaoh?
-A: To interrupt his dream.
-Q: What position of power was Joseph
-given by the Pharaoh?
-A: Second in command of Egypt.
-Q: What catastrophe did Joseph predict by
-interpreting the Pharaoh’s dream?
-A: A severe, seven-year famine.
-Q: Who came to Egypt that Joseph
-recognized because of the famine?
-A: His brothers.
-Q: Who was Jacob’s second son with
-Rachel?
-A: Benjamin
-Q: What did Joseph tell the brothers to do
-next time they came back to Egypt?
-A: To bring Benjamin with them.
-Q: Which brother volunteered to stay in
-Egypt instead of Benjamin?
-A: Judah
-Q: What did Joseph tell his brothers to do
-when they returned to Canaan?
-A: Bring their families and their father to
-Egypt.
-Questions about Exodus
-and Early Israel History
-Q: How did Moses’ mother save him from
-the Egyptian soldiers?
-A: Put him in a basket in the river.
-Q: What did Moses do after he killed an
-Egyptian?
-A: Ran away into the desert.
-Q: Through what did God speak to Moses in
-the desert?
-A: A burning bush
-Q: When Moses confronted the Pharaoh,
-what did his staff turn into when he threw it
-on the ground?
-A: A snake
-Q: What did Moses say God commanded
-the Pharaoh to do?
-A: Let the Israelite slaves go free.
-Q: How many plagues did God send on
-Egypt?
-A: 10
-Q: What was the final plague that convinced
-Pharaoh to let the slaves go?
-A: The firstborn son of all Egyptian families
-died.
-Q: When Pharaoh changed his mind and
-sent his army after the slaves, where did
-they meet at?
-A: By the Red Sea
-Q: What did God through Moses to save the
-slaves?
-A: Parted the Red Sea
-Q: When the Egyptians tried to follow the
-Israelites through the Red Sea, what
-happened?
-A: The water crashed on them and killed
-them all.
-Q: What did God send to feed the Israelites
-in the desert?
-A: Quail and manna
-Q: Where did God give Moses the Ten
-Commandments?
-A: Mt. Sinai
-Q: What golden image did the Israelites
-make at Mt. Sinai?
-A: A golden calf
-Q: What did the spies sent into Canaan see
-that made them scared?
-A: Giants in the land
-Q: Who were the only two Israelites
-allowed to go into the Promised Land after
-many years?
-A: Joshua and Caleb
-Q: What city did God make the walls fall so
-Joshua and the Israelites could conquer it?
-A: Jericho
-Q: After they took over the Promised Land
-and Joshua died, who ruled Israel?
-A: Judges
-Q: Who was the woman judge who led
-Israel to victory?
-A: Deborah
-Q: Who was the judge who defeated the
-Midianites with only 300 men using torches
-and horns?
-A: Gideon
-Q: Who was the judge who took a Nazarite
-vow from birth and fought against the
-Philistines?
-A: Samson
-Q: With what did Samson kill 1,000
-Philistines?
-A: A donkey’s jawbone
-Q: What Philistine woman asked Samson
-what his power came from?
-A: Delilah
-Q: How did Samson die?
-A: Pushing over the temple pillars, killing
-himself and many Philistines.
-Questions about the
-Early Kingdom
-Q: Who was the first king of Israel?
-A: Saul
-Q: Who anointed him king?
-A: Samuel
-Q: Who was the enemy who took the Ark of
-the Covenant?
-A: Philistines
-Q: What happened the idol which was
-beside the Ark in the enemy’s temple?
-A: The idol fell over and broke
-Q: When the people demanded Saul make a
-sacrifice to God that only priests should
-make, what did he do?
-A: Made the sacrifice anyways
-Q: When Saul conquered the Amalekites,
-what person did he keep as a prisoner
-instead of killing like God said to?
-A: The king, Agag
-Q: What was Saul’s punishment for
-disobeying?
-A: God took his kingdom away
-Q: Who was the king of Israel anointed by
-Samuel after Saul?
-A: David
-Q: What did David work as for his father?
-A: A shepherd
-Q: When the Philistines came to attack the
-Israelites, who mocked God and challenged
-them?
-A: Goliath the giant.
-Q: When David wanted to fight Goliath,
-what did Saul try to give him?
-A: His armor
-Q: What did David take from the brook to
-fight Goliath with?
-A: Five stones
-Q: How many sling-throws did it take David
-to hit Goliath?
-A: One
-Q: Who was Saul’s son that David
-befriended?
-A: Jonathan
-Q: What did Saul throw to try to kill David?
-A: A javelin/spear
-Q: What did Jonathan do to save David’s life
-from Saul?
-A: Warned him that Saul would try to kill
-him
-Q: What foreign country did David run away
-to?
-A: Land of the Philistines/Philistia
-Q: Did Saul give up on chasing David when
-David went into the wilderness?
-A: No
-Q: How many times did David spare Saul’s
-life?
-A: Twice
-Q: Where did David spare Saul’s life the first
-time?
-A: In a cave
-Q: Where did David spare Saul’s life the
-second time?
-A: In the camp where Saul was sleeping
-Q: What last judge of Israel died after Saul
-made a temporary peace with David?
-A: Samuel
-Q: Where did David go after Saul continued
-to hunt him?
-A: The Land of the Philistines/ Philistia
-Q: Where did Saul turn to for advice when
-he couldn’t sense God’s will?
-A: A witch
-Q: What prophet did he ask to speak to?
-A: Samuel
-Q: How did Saul die?
-A: Fell on his own sword
-Q: How many of his sons died in the same
-battle?
-A: All of them
-Questions about King
-David’s Reign
-Q: Did all of Israel immediately consider
-David their king?
-A: No
-Q: Who was David’s captain of his army?
-A: Joab
-Q: When David stayed in Jerusalem, what
-woman did he see and commit adultery
-with?
-A: Bathsheba
-Q: Who was Bathsheba’s husband?
-A: Uriah
-Q: When Bathsheba got pregnant, what did
-David make happen to Uriah?
-A: He was killed in battle
-Q: What prophet came to rebuke David?
-A: Nathan
-Q: What happened to Bathsheba’s child?
-A: The child died
-Q: When Bathsheba had another child,
-what did they name him?
-A: Solomon
-Q: Who was David’s son that started a
-rebellion against him?
-A: Absalom
-Q: What capital city did David abandon as
-Absalom came towards it?
-A: Jerusalem
-Q: When the two armies battled, what
-happened to Absalom’s hair?
-A: It got caught in a tree
-Q: Who killed Absalom?
-A: Joab
-Q: Because he killed Absalom, what was
-Joab’s punishment?
-A: He was not captain anymore
-Q: What was David’s second sin recorded in
-the Bible?
-A: He took a census of the people in his
-nation
-Q: During his time as king, who was David’s
-main enemy?
-A: Philistines
-Q: Which books of the Bible record David’s
-time as king?
-A: 1st and 2nd Samuel
-Q: Which book did David write most of?
-A: Psalms
-Questions about the
-Later History of Israel
-Q: Who was David’s son that became king?
-A: Solomon
-Q: What trait did Solomon pray for from
-God?
-A: Wisdom
-Q: What did Solomon build for the Lord?
-A: A temple
-Q: What famous queen came to visit
-Solomon?
-A: Queen of Sheba
-Q: How many wives did Solomon have?
-A: 700
-Q: Did Solomon always follow the Lord?
-A: No. He turned from God.
-Q: Who convinced Solomon to turn from
-God?
-A: His wives
-Q: What happened to the kingdom after
-Solomon’s rule?
-A: It split in two
-Q: Which books of the Bible record all the
-kings?
-A: 1st and 2nd Kings, 1st and 2nd Chronicles
-Q: Which books of the Bible did Solomon
-write?
-A: Song of Solomon and Proverbs and some
-Psalms
-Q: How many kings of Judah were there?
-A: 20
-Q: How many kings of Israel were there?
-A: 19
-Q: Who conquered Judah and took Daniel
-to their country?
-A: Babylonians
-Q: Whose dream did Daniel interpret in -
-Babylon?
-A: King Nebuchadnezzar
-Q: Who was the last king Daniel served
-under in the Bible?
-A: Darius
-Q: When Daniel prayed to God after it was
-not allowed, where was he thrown into?
-A: The lion’s den
-Q: What were Daniel’s three friends
-(Babylonian names)?
-A: Shadrach, Meshach, Abednego
-Q: When they refused to bow to an idol,
-where were they thrown?
-A: Into a fiery furnace
-Q: Who returned to Israel to build up the
-walls of Jerusalem?
-A: Nehemiah
-Q: What Israelite saved her people from
-being murdered and was a wife of the king?
-A: Esther
-Q: What daring thing did Esther do to talk
-with the king?
-A: Went in to talk without being summoned
-first
-Q: Who let the Israelites return to their
-homeland?
-A: Cyrus
-Q: Who eventually came from the lineage of
-David?
-A: Jesus
-Questions about the Life
-of Jesus
-Q: Who was Jesus' human mother?
-A: Mary
-Q: Who was Jesus’ adoptive father on
-Earth?
-A: Joseph
-Q: Who was Jesus’ birth father?
-A: God the Holy Spirit – see Matt 1:20
-Q: Name the city where Jesus was born?
-A: Bethlehem
-Q: Where did Jesus’ family go when Herod
-wanted to harm him as baby?
-A: Egypt
-True or False: Because Jesus was God, he
-didn’t obey his parents’ rules.
-A: False – Jesus obeyed his parents – see
-Luke 2:51
-True or False: Jesus was an only child.
-A: False - Jesus had brothers and sister - see
-Mark 6:3
-Q: How many of Jesus’ brothers are named
-in the Bible?
-A: Four
-Q: How many of Jesus’ sisters are named in
-the Bible?
-A: None
-Q: Name one of Jesus’ brothers?
-A: James, Joseph, Simon and Judas
-Q: Who was Jesus' most famous cousin?
-A: John the Baptist
-True or False: John the Baptist wore clothes
-made of goat hair?
-A: False – it was camel hair
-Q: Who baptized Jesus?
-A: John the Baptist
-Q: Who spoke from the sky when Jesus was
-baptized?
-A: God
-Q: What did God say?
-A: That he was well-pleased with his son.
-Q: What happened when Jesus went into
-the wilderness?
-A: He was tempted by Satan
-Q: Before Jesus starting preaching, what
-was his normal job?
-A: Carpenter (construction worker) – See
-Mark 6:3
-Q: Name Jesus’ hometown.
-A: Nazareth
-Q: True or False: Jesus turned water into
-Coca-Cola?
-A: False, Jesus turned water into wine.
-Q: Besides preaching, name an activity
-Jesus did while traveling in Galilee.
-A: Healing the sick and casting out demons.
-True or False: Jesus stayed away from
-people with bad reputations?
-A: False – He often ate with “sinners.”
-Q: Name the place where Jesus walked on
-water?
-A: Sea of Galilee
-True or False: At first, Jesus family tried to
-stop his ministry and said he was crazy.
-A: True - see Mark 3:11
-True or False: Jesus said his true family was
-anyone who obeys God.
-A: True – see Mark 3:34-35
-True or False: Everywhere he went, people
-loved Jesus and believed his message?
-A: False – many times Jesus was rejected.
-Q: Which member of the Jewish ruling
-counsel came to ask Jesus questions at
-night?
-A: Nicodemus
-True or False: Jesus didn’t like the people
-because they worshiped God the wrong
-way?
-A: False – Jesus welcomed all to follow him
-Q: How many disciples did Jesus choose?
-A: 12
-Q: What was Matthew before he followed
-Jesus?
-A: A tax collector
-True or False: Jesus would sometimes “spit”
-as part of his healing miracles.
-A: True - Three times the Bible describes
-him spitting. – see Mark 7:33, Mark 8:23,
-John 9:6
-Q: What is the shortest verse in the Bible?
-A: John 11:35 Jesus wept.
-Q: Why did Jesus weep in that verse?
-A: Because his friend Lazarus died.
-Q: How many days was Lazarus dead before
-Jesus came to visit?
-A: Four days
-Q: What 2 things did Jesus do to raise
-Lazarus back to life?
-A: He prayed and then told Lazarus to come
-out.
-Q: Who helped pay the bills for Jesus and
-the disciples ministry?
-A: Several women who he had healed – see
-Luke 8:1-3
-Q: Name the demon Jesus cast out in the
-region of the Gerasenes?
-A: Legion
-True or False: While on Earth, Jesus had the
-power to raise dead people back to life?
-A: True – several examples
-Q: How much bread and fish did Jesus use
-to feed over 5000 people?
-A: Five loaves of bread —and two fish
-True or False: Jesus’ said washing hands is
-never important.
-A: False – he said dirty hands don’t make a
-person spiritually unclean. You can still get
-germs!
-Q: What was Peter and Andrew doing when
-Jesus’ called them to follow him?
-A: Fishing
-Q: Name the two Old Testament people
-who appeared when Jesus was
-transfigured?
-A: Elijah and Moses
-True or False: Jesus ask the children to stay
-back while he was teaching important
-things to grown-ups.
-A: False – Jesus welcomed children
-Q: What problem did Bartimaeus have that
-Jesus fixed?
-A: He was blind
-True or False: When Jesus went to the
-Temple, he always used his inside voice.
-A: False – Jesus drove out the money
-changers
-Q: How many people did Jesus feed with
-fish and bread?
-A: 5,000 people
-Q: How many lepers did Jesus heal when
-only 1 returned?
-A: 10
-Q: What did Jesus do at the Last Supper to
-his disciples?
-A: Washed their feet
-True or False: Jesus said only big money
-offerings were important to God.
-False – See the Widow’s Offering
-Q: What did the woman pour on Jesus’ feet
-at the home of Simon the Leeper?
-A: Jar of expensive perfume
-Q: Name the disciple who betrayed Jesus.
-A: Judas Iscariot
-Q: What garden did Jesus go to when he
-prayed after the Last Supper?
-A: Garden of Gethsemane
-True or False: The Jewish leaders tried to
-set Jesus free.
-A: False – They lobbied for his crucifixion
-Q: Who gave Jesus a crown made of thorns?
-A: Roman soldier
-Q: Name the Roman Governor who sat over
-Jesus trial?
-A: Pilate
-Q: What did Pilate do to “cleanse himself”
-of the crucifixion?
-A: Washed his hands
-Q: Who cut off a soldier’s ear when Jesus
-was being arrested?
-A: Peter
-True or False: Jesus didn’t know that he was
-going to be arrested and killed in Jerusalem.
-A: False – He knew and told his disciples
-before it happened.
-Q: Which disciple denied Jesus three times?
-A: Peter
-Q: What happened to the temple curtain
-when Jesus was killed?
-A: It was ripped
-Q: What happened after Jesus was buried in
-the tomb?
-A: He rose again
-Q: What was rolled away from the entrance
-of the tomb?
-A: A large stone
-Q: What day of the week did Jesus rise back
-to life?
-A: Sunday – the first day of the week
-Q: How many days before Jesus returned to
-Heaven?
-A: 40 days
-Q: How did Jesus leave Earth and go to
-Heaven?
-A: He rose up into the clouds
-Q: How many people saw Jesus after he
-came back from the dead?
-A: More than 500 – see 1 Cor 15:3–8
-More New Testament
-Questions
-Q: What was another name for the Apostle
-Paul?
-A: Saul of Tarsus
-Q: Who was the first Christian to die for his
-faith?
-A: Stephen
-Q: How many books have the name John in
-them?
-A: Four (John, 1 John, 2, John, 3 John)
-Q: Who preached at Pentecost?
-A: Peter
-Q: What amazing miracle happened with
-languages?
-A: Everybody heard the sermon in their own
-language.
-Q: Who was Saul?
-A: He persecuted Christians
-Q: What happened when he was on the
-road to Damascus?
-A: He had a changing experience with Jesus
-Q: What was his name changed to?
-A: Paul
-Q: Who was exiled to an island?
-A: John
-Q: Who was crucified upside down?
-A: Peter
-Q: Who was the first martyr and was
-stoned?
-A: Stephen
-True or False: Ananias and Sapphira died
-after lying to the Apostles about their
-offering.
-A: True
-Q: How many deacons were chosen to help
-the apostles to distribute food to widows?
-A: Seven
-Q: Which Apostle took the Gospel to the
-city of Samaria?
-A: Philip
-Q: Which Apostle shared the Gospel with an
-Ethiopian official on the road to Gaza?
-A: Philip
-True or False: Peter raised a woman named
-Dorcas from the dead.
-A: True – see Acts 9
-Q: Where did Peter stay during his ministry
-in the city of Joppa?
-A: In the house of Simon the tanner
-Q: What did Peter’s vision about the
-unclean animals mean?
-A: That all people can be made clean
-through Jesus – aka non-Jews can be saved.
-Q: In what city were Jesus’ followers first
-called “Christians”?
-A: Antioch
-True or False: Peter was rescued from
-prison by an Angel.
-A: True – see Acts 12
-Q: Who went with Paul on his early mission
-trips?
-A: Barnabas
-True or False: Paul had a vison of a man
-calling him to come over to Carthage.
-False – it was a man from Macedonia
-True or False: God sent an earthquake to
-rescue Paul and Silas from prison in Philippi.
-A: True – but they didn’t escape but stayed
-in jail to share the good news
-Q: What did the Philippian jailer say to Paul
-after he heard the Gospel?
-A: What must I do to be saved?
-Q: How did Paul and Silas respond?
-A: Believe in the Lord Jesus, and you will be
-saved.
-Q: What was Paul’s goal in his missionary
-journey?
-A: To take the gospel everywhere and
-finally to preach in the capitol Rome
-Questions about the 10
-Commandments
-Q: Where can you find the 10
-commandments in the Bible?
-A: Exodus 20 and Deuteronomy 5
-Q: Name the person who received the 10
-Commandments from God?
-A: Moses
-Q: What is the preamble or introduction to
-the Commandments?
-A: I am the LORD your God who brought
-you out of Egypt (slavery).
-Q: What is the 1st commandment?
-A: You shall have no other gods before me.
-Q: What is the 2nd commandment?
-A: You shall not make idols.
-Q: What is the 3rd commandment?
-A: You shall not misuse the name of the
-LORD your God.
-Q: What is the 4th commandment?
-A: Observe the Sabbath day by keeping it
-holy.
-Q: What is the 5th commandment?
-A: Honor your father and mother.
-Q: What is the 6th commandment?
-A: You shall not murder.
-Q: What is the 7th commandment?
-A: You shall not commit adultery.
-Q: What is the 8th commandment?
-A: You shall not steal.
-Q: What is the 9th commandment?
-A: You shall not give false testimony.
-Q: What is the 10th commandment?
-A: You shall not covet.
-True or False: Jesus said the OT rules don’t
-matter anymore.
-A: False – See Matt 5:17
-Q: How many rules does Jesus use to
-summarize all the OT rules?
-A: Two
-Q: What does Jesus say is the first and
-greatest commandment?
-A: Love God with all your heart, minds, soul,
-and strength.
-Q: What does Jesus says is the second
-commandment?
-A: Love your neighbor as yourself.
-Questions about the
-Fruit of the Spirit?
-Q: Where is the Fruit of the Spirit found in
-the Bible?
-A: Galatians 5
-Q: Which human author wrote Galatians?
-A: Paul
-True or False: Bananas are a fruit of the
-Spirit? 🍌
-A: False – Bananas are a gift from God but
-not considered spiritual fruit in Galatians 5.
-Q: Name any of the 9 Fruit of the Spirit.
-A: love, joy, peace, patience, kindness,
-goodness, faithfulness, gentleness and selfcontrol. (sometimes patience is translated
-forbearance or longsuffering – see
-Galatians 5:22 )
-True or False: The opposite of the Fruit of
-the Spirit are called “the works of the
-flesh.”
-A: True – see Galatians 5:19-21
-Questions about the
-Lord’s Prayer
-Q: Where in the Bible can you find the
-Lord’s Prayer?
-A: Matthew 6
-Q: Who taught the Lord’s Prayer?
-A: Jesus
-Q: How many requests are in the Lord’s
-Prayer?
-A: Seven
-Q: What is the 1st petition?
-A: Hallowed be your name
-Q: What is the 2nd petition?
-A: Your kingdom come
-Q: What is the 3rd petition?
-A: Your will be done on Earth
-Q: What is the 4th petition?
-A: Give us our daily bread
-Q: What is the 5th petition?
-A: Forgive our debts
-Q: What is the 6th petition?
-A: Don’t lead us into temptation
-Q: What is the 7th petition?
-A: Deliver us from evil
-True or False: The more words we say
-makes our prayers better.
-A: False – Jesus said God already knows
-what we need'''
-       "")
 
 
 
